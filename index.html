@@ -1,5 +1,87 @@
 <html>
   
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+<div id ="container2">
+  <div id ="animate2"></div>
+</div>
+<div id ="container3">
+  <div id ="animate3"></div>
+</div>
+
+<script>
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+      pos++; 
+      elem.style.top = 0; 
+      elem.style.left = 0;
+      myMove();
+      myMove2();
+      myMove3();
+    } else {
+      pos++; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+<script>
+function myMove2() {
+  let id = null;
+  const elem = document.getElementById("animate2");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame2, 5);
+  function frame2() {
+    if (pos == 350) {
+      clearInterval(id);
+      pos++; 
+      elem.style.top = 0; 
+      elem.style.left = 0;
+      myMove1();
+      myMove2();
+      myMove3();
+    } else {
+      pos++; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+<script>
+function myMove3() {
+  let id = null;
+  const elem = document.getElementById("animate3");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame3, 5);
+  function frame3() {
+    if (pos == 350) {
+      clearInterval(id);
+      pos++; 
+      elem.style.top = 0; 
+      elem.style.left = 0;
+      myMove1();
+      myMove2();
+      myMove3();
+    } else {
+      pos++; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>  
+  
   <button onclick="window.location.href='https://hybridbird.github.io/germanproject';">Reload Page</button>
   <h1>Guten Tag! </h1>
   <br>
@@ -93,88 +175,6 @@ body {
 </head>
 <body>
 
-<p><button onclick="myMove()">Click Me</button></p> 
-
-<div id ="container">
-  <div id ="animate"></div>
-</div>
-<div id ="container2">
-  <div id ="animate2"></div>
-</div>
-<div id ="container3">
-  <div id ="animate3"></div>
-</div>
-
-<script>
-function myMove() {
-  let id = null;
-  const elem = document.getElementById("animate");   
-  let pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-      pos++; 
-      elem.style.top = 0; 
-      elem.style.left = 0;
-      myMove();
-      myMove2();
-      myMove3();
-    } else {
-      pos++; 
-      elem.style.left = pos + "px"; 
-    }
-  }
-}
-</script>
-<script>
-function myMove2() {
-  let id = null;
-  const elem = document.getElementById("animate2");   
-  let pos = 0;
-  clearInterval(id);
-  id = setInterval(frame2, 5);
-  function frame2() {
-    if (pos == 350) {
-      clearInterval(id);
-      pos++; 
-      elem.style.top = 0; 
-      elem.style.left = 0;
-      myMove1();
-      myMove2();
-      myMove3();
-    } else {
-      pos++; 
-      elem.style.left = pos + "px"; 
-    }
-  }
-}
-</script>
-<script>
-function myMove3() {
-  let id = null;
-  const elem = document.getElementById("animate3");   
-  let pos = 0;
-  clearInterval(id);
-  id = setInterval(frame3, 5);
-  function frame3() {
-    if (pos == 350) {
-      clearInterval(id);
-      pos++; 
-      elem.style.top = 0; 
-      elem.style.left = 0;
-      myMove1();
-      myMove2();
-      myMove3();
-    } else {
-      pos++; 
-      elem.style.left = pos + "px"; 
-    }
-  }
-}
-</script>  
-  
 <button class="accordion">Quiz Questions</button>
 <div class="panel">
   <button class="accordion">Bundestag Questions</button>
