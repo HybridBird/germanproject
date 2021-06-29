@@ -10,14 +10,6 @@
   <h2>Quiz Questions</h2>
   <p>(Click the question to reveal the answer)</p>
   <h3>Bundestag Questions</h3>
-  <button id="button1" onclick="getElementById('button1').innerHTML=('709')">How many seats are in the Bundestag?</button>
-  <button id="button1reset" onclick="getElementById('button1').innerHTML=('How many seats are in the Bundestag?')">Reset</button>
-  <br>
-  <br>
-  <button id="button2" onclick="getElementById('button2').innerHTML=('Every 4 years')">How often are the Bundestag elections?</button>
-  <button id="button2reset" onclick="getElementById('button2').innerHTML=('How often are the Bundestag elections?')">Reset</button>
-  <br>
-  <br>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .accordion {
@@ -50,6 +42,16 @@
 <button class="accordion">Quiz Questions</button>
 <div class="panel">
   <button class="accordion">Bundestag Questions</button>
+    <div class="panel">
+      <button class="accordion">How many seats are in the Bundestag?</button>
+          <div class="panel">
+          <button class="accordion">709</button>
+          </div>
+      <button class="accordion">How often are Bundestag elections?</button>
+          <div class="panel">
+          <button class="accordion">Every 4 years.</button>
+          </div>
+    </div>
 </div>
  
 <script>
